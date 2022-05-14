@@ -6,28 +6,25 @@ date=$(date '+%Y-%m-%d %H:%M:%S') ## For filename
 
 ## Run Original version with 1, 2, 4, 6 and 8 cores 10 times, with 6 digit key
 
-		for i in {1..3};
-			do echo -e "\n" >> "times_${date}.csv";
-			 timeout 5m mpirun -np 2 Bruteforce-Original "encryptea1.txt" "i use " 2 2562 >> "times_${date}.csv";
-			done
+		#for i in {1..3};
+		#	do echo -e "\n" >> "times_${date}.csv";
+		#	 timeout 5m mpirun -np 2 Bruteforce-Original "encryptea1.txt" "i use " 2 2562 >> "times_${date}.csv";
+		#	done
 
-		for i in {1..3};
-			do echo -e "\n" >> "times_${date}.csv";
-			 timeout 5m mpirun -np 4 Bruteforce-Original "encryptea1.txt" "i use " 4 2562 >> "times_${date}.csv";
-			done
+		#for i in {1..3};
+		#	do echo -e "\n" >> "times_${date}.csv";
+		#	 timeout 5m mpirun -np 4 Bruteforce-Original "encryptea1.txt" "i use " 4 2562 >> "times_${date}.csv";
+		#	done
 
-		for i in {1..3};
-			do echo -e "\n" >> "times_${date}.csv";
-			 timeout 5m mpirun -np 6 Bruteforce-Original "encryptea1.txt" "i use " 6 2562 >> "times_${date}.csv";
-			done
+		#for i in {1..3};
+		#	do echo -e "\n" >> "times_${date}.csv";
+		#	 timeout 5m mpirun -np 6 Bruteforce-Original "encryptea1.txt" "i use " 6 2562 >> "times_${date}.csv";
+		#	done
 
-		for i in {1..3};
-			do echo -e "\n" >> "times_${date}.csv";
-			 timeout 5m mpirun -np 8 Bruteforce-Original "encryptea1.txt" "i use " 8 2562 >> "times_${date}.csv";
-			done
-
-
-
+		#for i in {1..3};
+		#	do echo -e "\n" >> "times_${date}.csv";
+		#	 timeout 5m mpirun -np 8 Bruteforce-Original "encryptea1.txt" "i use " 8 2562 >> "times_${date}.csv";
+		#	done
 
 ## Run staggered version with 1, 2, 4, 6 and 8 cores 10 times, with 6 digit key
 
